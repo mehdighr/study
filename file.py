@@ -1,5 +1,7 @@
-with open("myfile.txt", "w+", errors= ) as my_file:
-    
-    print("hiiii", file= my_file)
-    
-    print(my_file.readline())
+import json
+
+
+with open("myfile.json","w+") as my_file:
+    json.dump([1, 2, 3], my_file, indent= 4, separators= ("=", "="))
+    my_file.seek(0)
+    print(json.load(my_file))
