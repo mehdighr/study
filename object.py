@@ -33,3 +33,14 @@
 # f.y = 0
 
 # print(s.absoulute(f))
+
+class Myname:
+    def __init__(self, x, n):
+        print(type(self))
+        self.x = n
+        self.n = x
+    def SayHello(self):
+        print(f"hello {self.n}")
+        
+c = Myname(10, 5)
+v = Myname(10, 5)
